@@ -17,17 +17,19 @@ export default function Login(){
     function signIn(e){
         e.preventDefault();
 
-        const promise = axios.post('https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/login', {
+        const promise = axios.post('http://localhost:5000/sign-in', {
             email,
             password
         });
 
         promise.then (response => {
+            console.log(response);
             setToken(response.data.token);
-            setUser(response.data)
-            navigate('/hoje');
+            setUser(response.data.name)
+            navigate('/wallet');
         });
         promise.catch (error => {
+            console.log(error)
             setEmail('');
             setPassword('');
             alert('Credenciais incorretas')

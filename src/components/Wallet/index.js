@@ -7,12 +7,16 @@ import Title from "../WalletComponents/Title"
 import WalletBalance from "../WalletComponents/WalletBalance";
 import plus from "../../assets/plus.png"
 import minus from "../../assets/minus.png"
+import { useContext } from "react";
+import UserContext from '../../context/UserContext';
 
 export default function Wallet(){
 
+    const { token, user } = useContext(UserContext);
+
     return(
         <Container>
-            <Title>ola, Fulano</Title>
+            <Title>ola, {user}</Title>
             <WalletBalance>teste</WalletBalance>
             <Buttons>
                 <button><img src={plus} alt="sinal de mais" />Nova entrada</button>
