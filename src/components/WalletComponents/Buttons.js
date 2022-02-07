@@ -5,7 +5,7 @@ const Buttons = styled.div`
     justify-content: space-between;
     width: 100%;
     margin-top: 13px;
-    button{
+    .new-entry{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
