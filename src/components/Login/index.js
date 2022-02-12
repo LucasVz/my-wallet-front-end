@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import axios from 'axios';
-import logo from '../../assets/logo.png'
+//import logo from '../../assets/logo.png'
 import Container from "../FormComponents/Container";
 import Button from "../FormComponents/Button";
 import Input from "../FormComponents/Input"
@@ -38,7 +38,7 @@ export default function Login(){
 
     return(
         <Container onSubmit={signIn}>
-            <img src= {logo} alt="logo" />
+            {/* <img src= {logo} alt="logo" /> */}
             <Input placeholder='E-mail' type="email" onChange={(e) => setEmail(e.target.value)} value={email} />
             <Input placeholder='Senha' type="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
             <Button>Entrar</Button>
