@@ -17,7 +17,7 @@ export default function Login(){
     function signIn(e){
         e.preventDefault();
 
-        const promise = axios.post('https://git.heroku.com/project-my-wallet.git/sign-in', {
+        const promise = axios.post('https://project-my-wallet.herokuapp.com/sign-in', {
             email,
             password
         });

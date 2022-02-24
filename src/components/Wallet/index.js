@@ -19,7 +19,7 @@ export default function Wallet(){
     const [transactions, setTransactions] = useState([]);
 
     useEffect(() => {
-        const promise = axios.get('https://git.heroku.com/project-my-wallet.git/entry',{
+        const promise = axios.get('https://project-my-wallet.herokuapp.com/entry',{
             headers: {
                 Authorization: `Bearer ${token}`
             }

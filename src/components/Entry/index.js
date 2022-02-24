@@ -16,7 +16,7 @@ export default function Entry(){
     const { token } = useContext(UserContext);
 
     function sendEntry(){
-        const promise = axios.post('https://git.heroku.com/project-my-wallet.git/entry', {
+        const promise = axios.post('https://project-my-wallet.herokuapp.com/entry', {
             value: value,
             description: description,
             status: 'earning'
