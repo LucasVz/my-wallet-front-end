@@ -16,7 +16,7 @@ export default function Exit(){
     const { token } = useContext(UserContext);
 
     function sendExit(){
-        const promise = axios.post('http://localhost:5000/entry', {
+        const promise = axios.post('https://git.heroku.com/project-my-wallet.git/entry', {
             value: value,
             description: description,
             status: 'spent'

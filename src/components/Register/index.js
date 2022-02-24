@@ -17,7 +17,7 @@ export default function Register(){
         e.preventDefault();
 
         if(password === confirmPassword){
-            const promise = axios.post("http://localhost:5000/sign-up", {
+            const promise = axios.post("https://git.heroku.com/project-my-wallet.git/sign-up", {
                 name,
                 email,
                 password
