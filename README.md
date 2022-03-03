@@ -4,6 +4,8 @@ Um aplicatico para acompanhar seus controle financeiro.
 
 <img src="/src/assets/mywallet.gif" />
 
+Você pode acessar o My-Wallet aqui https://my-wallet-front-end-three.vercel.app/
+
 ## Sobre
 
 Com My-Wallet, você pode cadastrar seus ganhos e gastos do dia a dia 
@@ -29,13 +31,15 @@ As seguintes ferramentas e frameworks foram usados na construção do projeto:
 
 ## Como rodar
 1. Clone esse repositorio
-2. Instale as dependencias
+2. Clone o repositorio do backend https://github.com/LucasVz/my-wallet-back-end
+3. Siga as instruções para instalar o backend em https://github.com/LucasVz/my-wallet-back-end
+4. Instale as dependencias
 ```bash
 npm i
 ```
-3. Inicie o aplicativo com
+5. Inicie o aplicativo com
 ```bash
 npm run start
 ```
-4. Acesse no seu navegador http://localhost:3000/
+6. Acesse no seu navegador http://localhost:3000/
 
