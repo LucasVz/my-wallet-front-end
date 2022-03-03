@@ -2,7 +2,7 @@
 
 Um aplicatico para acompanhar seus controle financeiro.
 
-<img src="/src/assets/track-it-usage.gif" />
+<img src="/src/assets/mywallet.gif" />
 
 ## Sobre
 
@@ -28,16 +28,14 @@ As seguintes ferramentas e frameworks foram usados na construção do projeto:
 </p>
 
 ## Como rodar
-
 1. Clone esse repositorio
-
 2. Instale as dependencias
-bash
+```bash
 npm i
-
+```
 3. Inicie o aplicativo com
-bash
+```bash
 npm run start
-
+```
 4. Acesse no seu navegador http://localhost:3000/
 
